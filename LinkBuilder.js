@@ -1,0 +1,9 @@
+class LinkBuilder {
+    buildLink(city , days){
+        let link = "http://api.weatherapi.com/v1/forecast.json?key=3dd7434243bb4e06933153229230509";
+        link += "&q=" + city + "&days=" + days;
+
+        return link;
+        }
+}
+export default LinkBuilder;
