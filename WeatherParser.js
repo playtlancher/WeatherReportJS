@@ -1,16 +1,10 @@
 class WeatherParser {
-    parse(link) {
-
-        const xhr = new XMLHttpRequest();
-        xhr.open("GET", this.link);
-        xhr.onload = () => {
-            return this.processResponse(xhr.response);
+    parse = async (link) => {
+        const response = await fetch(link);
+        if(response.ok){
+            return await response.json();
         }
-        xhr.send();
-    }
-    processResponse(responseData) {
-
     }
 }
 
-export default WeatherParser;
+

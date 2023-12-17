@@ -6,4 +6,3 @@ class LinkBuilder {
         return link;
         }
 }
-export default LinkBuilder;
