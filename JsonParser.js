@@ -1,0 +1,5 @@
+class JsonParser{
+    parse(response){
+      
+    }
+}
