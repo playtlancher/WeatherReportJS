@@ -1,10 +1,12 @@
 import buildLink from "./LinkBuilder.js";
 import getWeather from "./GetWeather.js"
+import parseWeather from "./JsonParser.js";
 async function btnClick() {
     let link = buildLink(document.getElementById("city").value, document.getElementById("days").value);
-    console.log(link);
-    let response = getWeather(link);
-    console.log(response);
+    getWeather(link).then((response)=>{
+        parseWeather(response);
+    });
+    // console.log(response);
     return false;
 }
 
@@ -24,4 +26,4 @@ function daysInput(id) {
     });
 }
 daysInput("days");
-document.getElementById("WeatherBtn").addEventListener("click",btnClick);
+document.getElementById("weatherForm").addEventListener("submit",btnClick);
