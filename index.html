@@ -7,11 +7,119 @@
     <script type="module" src="main.js"></script>
 </head>
 <body>
-<form id="weatherForm">
+<form id="weatherForm" onsubmit="return false">
     <input id="city" type="text" class="input" placeholder="Enter city">
-    <input id="days" type="number" min="1" max="3" placeholder="Enter 1-3 days">
     <button id="WeatherBtn">Weather Report</button>
 </form>
+<table class="weather">
+    <tbody>
+    <tr class="gray time">
+        <td>2 :00</td>
+        <td>5 :00</td>
+        <td>8 :00</td>
+        <td>11 :00</td>
+        <td>14 :00</td>
+        <td>17 :00</td>
+        <td>20 :00</td>
+        <td>23 :00</td>
+    </tr>
+    <tr class="img weatherIcoS">
+        <td class="p1">
+            <img class="weatherImg" src="//sinst.fwdcdn.com/img/weatherImg/s/n400.gif" alt="">
+        </td>
+        <td class="p2">
+            <img class="weatherImg" src="//sinst.fwdcdn.com/img/weatherImg/s/n400.gif" alt="">
+        </td>
+        <td class="p3">
+            <img class="weatherImg" src="//sinst.fwdcdn.com/img/weatherImg/s/d412.gif" alt="">
+        </td>
+        <td class="p4">
+            <img class="weatherImg" src="//sinst.fwdcdn.com/img/weatherImg/s/d410.gif" alt="">
+        </td>
+        <td class="p5">
+            <img class="weatherImg" src="//sinst.fwdcdn.com/img/weatherImg/s/d412.gif" alt="">
+        </td>
+        <td class="p6">
+            <img class="weatherImg" src="//sinst.fwdcdn.com/img/weatherImg/s/n410.gif" alt="">
+        </td>
+        <td class="p7">
+            <img class="weatherImg" src="//sinst.fwdcdn.com/img/weatherImg/s/n400.gif" alt="">
+        </td>
+        <td class="p8">
+            <img class="weatherImg" src="//sinst.fwdcdn.com/img/weatherImg/s/n000.gif" alt="">
+
+        </td>
+    </tr>
+    <tr class="temperature">
+        <td class="p1">+2°</td>
+        <td class="p2">+2°</td>
+        <td class="p3 ">+1°</td>
+        <td class="p4">+1°</td>
+        <td class="p5">+1°</td>
+        <td class="p6">+2°</td>
+        <td class="p7">+1°</td>
+        <td class="p8">0°</td>
+    </tr>
+    <tr class="temperatureSens">
+        <td class="p1">-2°</td>
+        <td class="p2">-2°</td>
+        <td class="p3">-2°</td>
+        <td class="p4">-2°</td>
+        <td class="p5">-1°</td>
+        <td class="p6">+1°</td>
+        <td class="p7">-1°</td>
+        <td class="p8">-2°</td>
+    </tr>
+    <tr class="gray">
+        <td class="p1">728</td>
+        <td class="p2">727</td>
+        <td class="p3">725</td>
+        <td class="p4">725</td>
+        <td class="p5">724</td>
+        <td class="p6">725</td>
+        <td class="p7">725</td>
+        <td class="p8">725</td>
+    </tr>
+    <tr>
+        <td class="p1">79</td>
+        <td class="p2">79</td>
+        <td class="p3">86</td>
+        <td class="p4">92</td>
+        <td class="p5">94</td>
+        <td class="p6">93</td>
+        <td class="p7">89</td>
+        <td class="p8">87</td>
+    </tr>
+    <tr class="gray">
+        <td class="p1">
+        </td>
+        <td class="p2">
+        </td>
+        <td class="p3">
+        </td>
+        <td class="p4">
+        </td>
+        <td class="p5">
+        </td>
+        <td class="p6">
+        </td>
+        <td class="p7">
+        </td>
+        <td class="p8">
+        </td>
+    </tr>
+    <tr>
+        <td class="p1">-</td>
+        <td class="p2">-</td>
+        <td class="p3">-</td>
+        <td class="p4">-</td>
+        <td class="p5">-</td>
+        <td class="p6">82</td>
+        <td class="p7">42</td>
+        <td class="p8">3</td>
+    </tr>
+    </tbody>
+</table>
 
 </body>
 </html>

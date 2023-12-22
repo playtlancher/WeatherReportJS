@@ -4,6 +4,7 @@ import parseWeather from "./JsonParser.js";
 async function btnClick() {
     let link = buildLink(document.getElementById("city").value, 3);
     getWeather(link).then((response)=>{
+        console.log(response);
         parseWeather(response);
     });
 
