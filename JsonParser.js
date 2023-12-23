@@ -19,6 +19,6 @@ export default function parseWeather(response) {
         }
         weatherArray.push(weatherArrayPerHour);
     }
-    console.log(weatherArray[0][0]);
+    return weatherArray;
 
 }
