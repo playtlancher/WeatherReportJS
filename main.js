@@ -18,7 +18,7 @@ async function btnClick() {
         let weatherArray = parseWeather(response);
         configButtons(weatherArray);
     });
-    document.getElementById("weather-table").style.display = "flex";
+    document.getElementById("weather-div").style.display = "flex";
 }
 
 document.getElementById("weatherForm").addEventListener("submit", btnClick);

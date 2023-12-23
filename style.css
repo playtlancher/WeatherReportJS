@@ -17,8 +17,8 @@ form button {
 }
 
 .weather {
-    border-collapse: collapse;
     margin-top: 3rem;
+    border-collapse: collapse;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@ th, td {
     padding: 8px;
 }
 
-.weather-div {
+.weather-button-div {
     display: flex;
     justify-content: center;
 }
@@ -43,4 +43,15 @@ th, td {
 .weatherImg {
     width: 2rem;
     height: 2rem;
+}
+.weather-label-div{
+    padding-top: 2rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.info-label{
+    border: 0 solid #dddddd;
+    text-align: right;
+    padding: 8px;
 }
