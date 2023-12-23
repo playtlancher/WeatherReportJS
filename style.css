@@ -1,39 +1,46 @@
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 form input {
     margin-bottom: 1.4rem;
     width: 14rem;
     height: 30px;
 }
-form button{
+
+form button {
     width: 10rem;
     height: 1.4rem;
     margin-bottom: 2rem;
 }
-.weather{
+
+.weather {
     border-collapse: collapse;
     margin-top: 3rem;
     display: none;
     flex-direction: column;
     align-items: center;
 }
+
 th, td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
-.weather-div{
+
+.weather-div {
     display: flex;
     justify-content: center;
 }
-.weather-button{
+
+.weather-button {
     display: none;
     margin: 0 2rem;
 }
-.weatherImg{
+
+.weatherImg {
     width: 2rem;
     height: 2rem;
 }
